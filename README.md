@@ -1,1 +1,2 @@
-HTML5-Canvas-parallax-scrolling.-city-landscape
+# HTML5 CANVAS
+parallax scrolling canvas.
