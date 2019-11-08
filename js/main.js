@@ -7,8 +7,8 @@ const images = {
 	backhome2: './img/backhome2.png'
 };
 const screenSize = {
-	x:2253, 
-	y:1211
+	x:1127, 
+	y:606
 };
 var lastFrameTime = 0;
 var canvas = document.querySelector('canvas');
@@ -98,7 +98,7 @@ class FrontHome {
 		this.totalSeconds += delta;
 		var new_pos = this.totalSeconds * this.speed % this.img.width;
 		ctx.save();
-		ctx.translate(-new_pos, canvas.height-this.img.height-100);
+		ctx.translate(-new_pos, canvas.height-this.img.height-40);
 		for (var i = 0; i < this.slideImages; i++) {
             ctx.drawImage(this.img, i * this.img.width, 0);
         }
@@ -122,7 +122,7 @@ class BackHome1 {
 		this.totalSeconds += delta;
 		var new_pos = this.totalSeconds * this.speed % this.img.width;
 		ctx.save();
-		ctx.translate(-new_pos, canvas.height-this.img.height-200);
+		ctx.translate(-new_pos, canvas.height-this.img.height-100);
 		for (var i = 0; i < this.slideImages; i++) {
             ctx.drawImage(this.img, i * this.img.width, 0);
         }
@@ -146,7 +146,7 @@ class BackHome2 {
 		this.totalSeconds += delta;
 		var new_pos = this.totalSeconds * this.speed % this.img.width;
 		ctx.save();
-		ctx.translate(-new_pos, canvas.height-this.img.height-400);
+		ctx.translate(-new_pos, canvas.height-this.img.height-200);
 		for (var i = 0; i < this.slideImages; i++) {
             ctx.drawImage(this.img, i * this.img.width, 0);
         }
